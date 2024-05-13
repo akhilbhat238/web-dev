@@ -20,7 +20,7 @@
     But grid lines are transparent!
     */
 
-    .main-container {
+    /*.main-container {
       background-color: black;
       display: grid;
       gap: 9px;
@@ -29,7 +29,7 @@
       grid-template-rows: 414px auto;
     }
 
-    .container    {
+    .container {
       display: grid;
       grid-template-columns: 320px auto;
       gap: 9px;
@@ -41,38 +41,93 @@
 
     #sub-container-1-right {
       background-color: #F0F1EC;
-    }  
-    
-    #sub-container-2-left {
-      display:grid;
-      grid-template-rows: auto 20px;
-      gap:9px;
     }
 
-    
-    .sub-container > .mini-container{
+    #sub-container-2-left {
+      display: grid;
+      grid-template-rows: auto 20px;
+      gap: 9px;
+    }
+
+
+    .sub-container>.mini-container {
       background-color: #F0F1EC;
     }
 
-   
+    #second-row {
+      grid-template-columns: 320px auto 50px;
+    }
+
+    #sub-container-2-center {
+      display: grid;
+      grid-template-rows: auto 20px;
+      gap: 9px;
+    }
+
+    #split-container {
+      background-color: black;
+      display: grid;
+      grid-template-columns: 198px 153px;
+      gap: 9px;
+    }
+
+    #yellow-container {
+      background-color: #F9D01E;
+    }
+
+    #nocolor-container {
+      background-color: #232629;
+    }
+
+    #sub-container-2-right{
+      display: grid;
+      grid-template-rows: 130px auto;
+      gap: 9px;
+    }
+
+    #blue-container{
+      background-color: #004592;
+      border-bottom: 10px solid;
+    }*/
 
   </style>
 </head>
 
 <body>
-  <div class="main-container">
-    <div class="container">
+  <!-- <div class="main-container">
+    <div class="container" id="first-row">
       <div class="sub-container" id="sub-container-1-left"></div>
       <div class="sub-container" id="sub-container-1-right"></div>
     </div>
-    <div class="container">
+    <div class="container" id="second-row">
       <div class="sub-container" id="sub-container-2-left">
         <div class="mini-container" id="mini-container-top"></div>
         <div class="mini-container" id="mini-container-bottom"></div>
       </div>
-      <div class="sub-container" id="sub-container-2-right"></div>
+      <div class="sub-container" id="sub-container-2-center">
+        <div class="mini-container"></div>
+        <div class="mini-container" id="split-container">
+          <div class="small-container" id="yellow-container"></div>
+          <div class="small-container" id="nocolor-container"></div>
+        </div>
+      </div>
+      <div class="sub-container" id="sub-container-2-right">
+        <div class="mini-container" id="blue-container"></div>
+        <div class="mini-container"></div>
+      </div>
     </div>
-    </div>
+  </div> 
+  </div>-->
+  <div class="'container">
+    <div class="item red"></div>
+    <div class="item white1"></div>
+    <div class="item white2"></div>
+    <div class="item red"></div>
+    <div class="item red"></div>
+    <div class="item red"></div>
+    <div class="item red"></div>
+    <div class="item red"></div>
+    <div class="item red"></div>
   </div>
 </body>
 
